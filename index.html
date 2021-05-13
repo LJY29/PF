@@ -3,9 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PF</title>
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-mobile.css">
+
 </head>
 <body>
-    <div>현재 수정중입니다.</div>
+    <div id="wrap" class="focus_cover">
+        <a href="#page1" id="skip-nav">본문 바로가기</a>
+        <header id="header">
+            <h1></h1>
+        </header>
+        <main id="main">
+            <div id="cover" class="scroll-page">
+                <div class="dark"></div>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="page1" class="scroll-page">
+                <section class="projects">
+                    <h2><span>Projects</span></h2>
+                    <article class="project first">
+                        <div class="thumbnail">
+                            <img src="./images/zhang-kaiyv-FmyIBz2JDHU-unsplash.jpg" alt="교육용 콘텐츠 개발" title="교육용 콘텐츠 개발">
+                        </div>
+                        <div class="explain">
+                            <div class="explain-head">
+                                <h3 class="title">교육용 콘텐츠 개발</h3>
+                                <button id="more-first" class="more">MORE</button>
+                            </div>
+                            <dl class="environment">
+                                <dt>개발 언어</dt>
+                                <dd>React, mobx, typescript, scss</dd>
+                            </dl>
+                            <dl class="details">
+                                <dt>프로젝트 설명</dt>
+                                <dd>
+                                    <ul>
+                                        <li>비상교육 한국어 학습 서비스 KLass 및 영어 학습 서비스 Oxford의 콘텐츠 제작.</li>
+                                        <li>소켓 통신을 이용하여 전자 칠판과 태블릿 PC 간 데이터를 전달하는 것이 특징으로 선생님과 학생들 사이에 활발한 소통이 가능합니다.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </article>
+                    <article class="project second">
+                        <div class="thumbnail">
+                            <img src="./images/zhang-kaiyv-FmyIBz2JDHU-unsplash.jpg" alt="디지털북 뷰어" title="디지털북 뷰어">
+                        </div>
+                        <div class="explain">
+                            <div class="explain-head">
+                                <h3 class="title">디지털북 뷰어</h3>
+                                <button id="more-second" class="more">MORE</button>
+                            </div>
+                            <dl class="environment">
+                                <dt>개발 언어</dt>
+                                <dd>html5, css, javacript, jquery</dd>
+                            </dl>
+                            <dl class="details">
+                                <dt>프로젝트 설명</dt>
+                                <dd>
+                                    <ul>
+                                        <li>epub 3.0 기반의 디지털북을 보여주는 뷰어</li>
+                                        <li>readium-js 기반으로 부가 기능들을 추가하여 커스텀 제작되었습니다.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <div id="modal-layout">
+                <div id="modal-layout-container">
+                    <button id="modal-close">닫기</button>
+                    <div id="modal-container">
+                        <div class="modal first">
+                            <header class="modal-head">
+                                <h3 class="title">교육용 콘텐츠 개발</h3>
+                                <dl class="environment">
+                                    <dt>개발 언어</dt>
+                                    <dd>React, mobx, typescript, scss</dd>
+                                </dl>
+                                <dl class="details">
+                                    <dt>프로젝트 설명</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>비상교육 한국어 학습 서비스 KLass 및 영어 학습 서비스 Oxford의 콘텐츠 제작.</li>
+                                            <li>소켓 통신을 이용하여 전자칠판과 태블릿 PC간 데이터를 전달하는 것이 특징으로 선생과 학생들 간 활발한 소통이 가능합니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </header>
+                            <main class="modal-body">
+                                <section class="dev-project">
+                                    <h4>비상교육 영어 Oxford</h4>
+                                    <dl class="dev-term">
+                                        <dt>개발 기간</dt>
+                                        <dd>2021-04 ~ 진행중</dd>
+                                    </dl>
+                                </section>
+                                <section class="dev-project">
+                                    <h4>비상교육 한국어 KLass 태국</h4>
+                                    <dl class="dev-term">
+                                        <dt>개발 기간</dt>
+                                        <dd>2020-05 ~ 2020-06</dd>
+                                    </dl>
+                                </section>
+                                <section class="dev-project">
+                                    <h4>비상교육 한국어 KLass 중급2</h4>
+                                    <dl class="dev-term">
+                                        <dt>개발 기간</dt>
+                                        <dd>2019-11 ~ 2020-02</dd>
+                                    </dl>
+                                </section>
+                                <section class="dev-project">
+                                    <h4>비상교육 한국어 KLass 중급1</h4>
+                                    <dl class="dev-term">
+                                        <dt>개발 기간</dt>
+                                        <dd>2019-07 ~ 2019-10</dd>
+                                    </dl>
+                                </section>
+                                <section class="info">
+                                    <dl class="works">
+                                        <dt>담당 업무</dt>
+                                        <dd>
+                                            <ul>
+                                                <li>과목별 프로젝트 제작</li>
+                                                <li>&lt;읽기, 쓰기, 말하기, 듣기, 문제풀이&gt; 개발, 퍼블리싱</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="view">
+                                        <dt><h4>VIEW</h4></dt>
+                                        <dd>
+                                            <div class="swiper-div">
+                                                <!-- Swiper -->
+                                                <div id="gallery-thumbs-1" class="swiper-container gallery-thumbs">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                    </div>
+                                                </div>
+                                                <div id="gallery-top-1" class="swiper-container gallery-top">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </section>
+                            </main>
+                        </div>
+                        <div class="modal second">
+                            <header class="modal-head">
+                                <h3 class="title">디지털북 뷰어</h3>
+                                <dl class="environment">
+                                    <dt>개발 언어</dt>
+                                    <dd>javacript, jquery, html5, css</dd>
+                                </dl>
+                                <dl class="details">
+                                    <dt>프로젝트 설명</dt>
+                                    <dd>
+                                        <p>epub 3.0 기반의 디지털북을 보여주는 뷰어</p>
+                                        <p>readium-js 기반으로 부가 기능들을 추가하여 커스텀 제작되었습니다.</p>
+                                    </dd>
+                                </dl>
+                            </header>
+                            <main class="modal-body">
+                                <section class="dev-project">
+                                    <h4>비상교육 와이즈캠프 글뼈도서관 전자책 뷰어</h4>
+                                    <dl class="dev-term">
+                                        <dt>개발 기간</dt>
+                                        <dd>2020-09 ~ 2020-12</dd>
+                                    </dl>
+                                    <dl class="works">
+                                        <dt>담당 업무</dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    PL, 디지털라이징 양산 구조 설계,
+                                                    화면 스와이프로 페이지 이동, 
+                                                    핀치 제스쳐로 페이지 확대 및 축소, 
+                                                    화면 터치로 페이지 단면 확대,
+                                                    시작 시 음성 자동 재생,
+                                                    마지막 페이지 저장 api연결
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </section>
+                                <section class="dev-project">
+                                    <h4>KIRD 연구관리총론 디지털북 뷰어</h4>
+                                    <dl class="dev-term">
+                                        <dt>개발 기간</dt>
+                                        <dd>
+                                            <p>1차: 2019-03 ~ 2019-06</p>
+                                            <p>2차: 2019-10 ~ 2019-12</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="works">
+                                        <dt>담당 업무</dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    퍼블리싱 전반(반응형), 
+                                                    웹접근성 준수(대체 텍스트 제공, 키보드로만 조작 가능), 
+                                                    크로스 브라우징 지원(ie11, edge, chrome, safari),
+                                                    콘텐츠 미디어(사진, 음성, 동영상) 컨트롤러 기능, 
+                                                    페이지 이동 기능
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="link">
+                                        <dt>웹사이트 링크</dt>
+                                        <dd><a href="https://www.kird.re.kr/repository/contents/digitalbook/dep_viewer/intro.html" target="_blank">https://www.kird.re.kr/repository/contents/digitalbook/dep_viewer/intro.html</a></dd>
+                                    </dl>
+                                </section>
+                                <section class="info">
+                                    <dl class="view">
+                                        <dt><h4>VIEW</h4></dt>
+                                        <dd>
+                                            <div class="swiper-div">
+                                                <!-- Swiper -->
+                                                <div id="gallery-thumbs-2" class="swiper-container gallery-thumbs">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                    </div>
+                                                </div>
+                                                <div id="gallery-top-2" class="swiper-container gallery-top">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                        <div class="swiper-slide" style="background-image:url(./images/cat1.jpg)"></div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var galleryThumbs1 = new Swiper('#gallery-thumbs-1', {
+            observer: true,
+            observeParents: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop1 = new Swiper('#gallery-top-1', {
+            observer: true,
+            observeParents: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs1
+            }
+        });
+
+        var galleryThumbs2 = new Swiper('#gallery-thumbs-2', {
+            observer: true,
+            observeParents: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop2 = new Swiper('#gallery-top-2', {
+            observer: true,
+            observeParents: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs2
+            }
+        });
+    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>

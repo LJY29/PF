@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #131313;
+    letter-spacing: -0.3px;
+}
+*:focus{
+    outline: 0px transparent;
+}
+div.hidden {
+    position: absolute; 
+    left: -9999px;
+}
+a {
+    color: inherit; 
+    text-decoration: inherit;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+
+/* common */
+#wrap {
+    position: relative; 
+}
+#wrap.focus_cover{
+    height: 100vh;
+    overflow: hidden;
+}
+#skip-nav {
+    position: fixed; 
+    left: 0; 
+    top: -36px; 
+    width: 100%; 
+    line-height: 35px; 
+    font-size: 16px; 
+    border-bottom: 1px solid #fff; 
+    color: #fff; 
+    background: rgba(0, 0, 0, 0.6); 
+    text-align: center; 
+    z-index: 10000; 
+    transition: top 0.3s;
+}
+#skip-nav:focus {
+    top: 0;
+}
+a.hidden {
+    position: fixed; 
+    left: 0; 
+    width: 200px; 
+    height: 0; 
+    line-height: 30px; 
+    text-align: center; 
+    color: #ffffff; 
+    background: rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+    transition: height 0.3s;
+}
+a.hidden:focus {
+    height: 30px;
+}
+a.hidden.start {
+    top: 0;
+}
+a.hidden.end {
+    bottom: 0;
+}

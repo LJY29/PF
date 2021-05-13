@@ -1,0 +1,109 @@
+/*
+##Device = 태블릿, 아이패드
+##Screen = 768px에서 1024px 사이
+*/
+@media (max-width: 1024px) {
+#page1{
+    /* background-color: rosybrown; */
+}
+
+section.projects{
+    width: 95%;
+}
+section.projects h2{
+    padding: 30px 0 20px;
+}
+article.project{
+    flex-flow: column;
+    padding: 30px 4%;
+}
+article.project .thumbnail{
+    margin-bottom: 20px;
+}
+article.project .thumbnail > img{
+}
+article.project .explain{
+    margin-left: 0;
+}
+}
+
+/*
+##Device = 저해상도 태블릿, 모바일
+##Screen = 767px 사이
+*/
+
+@media (max-width: 767px) {
+#page1{
+    /* background-color: saddlebrown; */
+}
+
+section.projects{
+    width: 100%;
+    padding-top: 0;
+}
+section.projects h2{
+    padding: 20px 0 10px 10px;
+}
+section.projects h2 span{
+    animation-name: scale-resize2;
+}
+@keyframes scale-resize2 {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1.5);
+    }
+    70% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+article.project{
+    padding: 30px 3%;
+}
+article.project .thumbnail{
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+}
+article.project .thumbnail > img{
+    max-width: none;
+    width: 100%;
+}
+article.project .explain dl{
+    flex-flow: column;
+}
+article.project .explain dt{
+    margin-bottom: 5px;
+}
+
+#modal-layout #modal-layout-container{
+    width: 95%;
+    height: calc(100% - 60px);
+}
+#modal-layout .modal{
+    padding: 50px 30px 0 30px;
+}
+#modal-layout .modal .modal-head{
+    padding: 0;
+}
+#modal-layout .modal .modal-head dl{
+    flex-flow: column;
+}
+#modal-layout .modal .modal-head dl dt{
+    margin-bottom: 5px;
+}
+#modal-layout .modal .modal-body{
+    padding: 35px 0 0 10px;
+}
+#modal-layout .modal .modal-body section dl{
+    flex-flow: column;
+}
+#modal-layout .modal .modal-body section dl dt{
+    margin-bottom: 5px;
+}
+}
