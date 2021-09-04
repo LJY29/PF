@@ -65,6 +65,31 @@
     bottom: 0;
     filter: blur(1px);
 }
+.scroll-page#cover .cover_title{
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 80px;
+    text-align: center;
+    word-break: keep-all;
+}
+.scroll-page#cover .cover_desc{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    word-break: keep-all;
+}
+.scroll-page#cover .cover_desc b{
+    color: #fff;
+    font-size: 18px;
+}
 
 .scroll-page#page1{
     min-height: 100vh;
@@ -251,7 +276,7 @@ article.project .explain dl dt{
 
 #modal-layout .modal{
     display: none;
-    padding: 70px 50px 0 50px;
+    padding: 70px 50px 70px 50px;
 }
 #modal-layout .modal.active{
     display: block;
@@ -314,6 +339,9 @@ article.project .explain dl dt{
     flex: auto 0 0;
     font-weight: 600;
 }
+#modal-layout .modal .modal-body section dl dd ul+ul{
+    margin-top: 25px;
+}
 #modal-layout .modal .modal-body section dl.link dd{
     color: rgb(0, 110, 255);
 }
@@ -342,6 +370,7 @@ article.project .explain dl dt{
 #modal-layout .modal .modal-body section.info dl.view dd .swiper-div{
     position: relative;
     height: 100%;
+    touch-action: none;
 }
 
 
@@ -352,13 +381,24 @@ article.project .explain dl dt{
     margin-left: auto;
     margin-right: auto;
 }
-.swiper-slide {
+.gallery-thumbs .swiper-slide{
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+}
+.swiper-slide {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
 }
 .gallery-top {
     height: 80%;
     width: 100%;
+}
+.gallery-top .swiper-slide .gallery_video{
+    max-width: 100%;
+    max-height: 100%;
 }
 .gallery-thumbs {
     height: 20%;

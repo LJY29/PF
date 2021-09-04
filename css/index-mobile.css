@@ -37,6 +37,9 @@ article.project .explain{
     /* background-color: saddlebrown; */
 }
 
+.scroll-page#cover .cover_title{
+    font-size: 40px;
+}
 section.projects{
     width: 100%;
     padding-top: 0;
