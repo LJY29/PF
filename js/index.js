@@ -7,15 +7,25 @@ document.addEventListener('DOMContentLoaded', function(){
 
     //더보기 클릭
     console.log(document.getElementsByClassName('more'));
-    document.getElementById('more-first').addEventListener('click', function(){
+    document.getElementById('more-fourth').addEventListener('click', function(){
         // document.getElementById('wrap').classList.add('focus_cover');
         document.getElementById('modal-layout').classList.add('active');
-        document.querySelectorAll('.modal.first')[0].classList.add('active');
+        document.querySelectorAll('.modal.fourth')[0].classList.add('active');
+    });
+    document.getElementById('more-third').addEventListener('click', function(){
+        // document.getElementById('wrap').classList.add('focus_cover');
+        document.getElementById('modal-layout').classList.add('active');
+        document.querySelectorAll('.modal.third')[0].classList.add('active');
     });
     document.getElementById('more-second').addEventListener('click', function(){
         // document.getElementById('wrap').classList.add('focus_cover');
         document.getElementById('modal-layout').classList.add('active');
         document.querySelectorAll('.modal.second')[0].classList.add('active');
+    });
+    document.getElementById('more-first').addEventListener('click', function(){
+        // document.getElementById('wrap').classList.add('focus_cover');
+        document.getElementById('modal-layout').classList.add('active');
+        document.querySelectorAll('.modal.first')[0].classList.add('active');
     });
 
     document.getElementById('modal-close').addEventListener('click', function(){

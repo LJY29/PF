@@ -363,15 +363,17 @@ article.project .explain dl dt{
     border-bottom: 2px solid black;
     display: inline-block;
 }
-#modal-layout .modal .modal-body section.info dl.view dd{
+#modal-layout .modal .modal-body section.info dl.view dd.view-swiper{
     width: 100%;
     height: 500px;
 }
-#modal-layout .modal .modal-body section.info dl.view dd .swiper-div{
+#modal-layout .modal .modal-body section.info dl.view dd.view-swiper .swiper-div{
     position: relative;
     height: 100%;
     touch-action: none;
 }
+.ml-20 { margin-left: 20px; }
+.mt-15 { margin-top: 15px; }
 
 
 /* view swiper */
